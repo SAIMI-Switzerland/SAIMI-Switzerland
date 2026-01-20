@@ -1,6 +1,6 @@
 site:
   name: SAIMI
-  site: 'https://www.saimi.ch'
+  site: 'http://www.saimi.ch'
   base: '/'
   trailingSlash: false
 

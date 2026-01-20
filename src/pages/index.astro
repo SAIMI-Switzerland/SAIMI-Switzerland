@@ -61,34 +61,22 @@ const metadata = {
     id="importantdates"
     items={[
       {
-        title: 'xx.xx.xxxx: <span class="font-medium">Opening abstract submission</span>',
+        title: '19.03.2026: <span class="font-medium">Opening abstract submission</span>',
         description:
-          "description",
+          "",
         icon: 'tabler:number-1',
       },
       {
-        title: 'xx.xx.xxxx: <span class="font-medium">Astract submission deadline</span>',
+        title: '30.04.2026: <span class="font-medium">Astract submission deadline</span>',
         description:
-          "description",
+          "",
         icon: 'tabler:number-2',
       },
       {
-        title: 'xx.xx.xxxx: <span class="font-medium">Review assignments</span>',
+        title: '14.05.2026: <span class="font-medium">Final decisions</span>',
         description:
-          'description',
+          '',
         icon: 'tabler:number-3',
-      },
-      {
-        title: 'xx.xx.xxxx: <span class="font-medium">Review due</span>',
-        description:
-          'description',
-        icon: 'tabler:number-4',
-      },
-      {
-        title: 'xx.xx.xxxx: <span class="font-medium">Final decisions</span>',
-        description:
-          'description',
-        icon: 'tabler:number-5',
       },
     ]}
   />
@@ -147,7 +135,7 @@ const metadata = {
     },
     {
       subtitle: "How to submit?",
-      text: "Please submit papers using the paper submission system. The Microsoft CMT service is used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support. Submission Deadline: XXXXXX"
+      text: "Please submit papers using the paper submission system. The Microsoft CMT service is used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support. Submission Deadline: 30.04.2026."
     },
     {
       subtitle: "Presentation",
@@ -186,11 +174,13 @@ const metadata = {
         "16:45-17:00 Closing words and goodbye + awards"
       ],
     },
-    {
+
+    /*{
       id: "keynote",
       subtitle: "Keynote",
       text: "We will have multiple keynotes by highly interesting speakers. More information will follow shortly.",
     },
+    */
   ]}
 >
   <Fragment slot="bg">
@@ -199,7 +189,7 @@ const metadata = {
 </Content3>
 
   <!-- Content Widget **************** -->
-
+<!-- 
   <Content2
     title='Resources'
     id='resources'
@@ -210,6 +200,25 @@ const metadata = {
     },
   ]}
   >
+  </Content2>
+-->
+
+  <!-- Content Widget **************** -->
+  <Content2
+    title='Attend'
+    id='attend'
+    sections={[
+    {
+      subtitle: "Registration",
+      text: "Please use the following link to register.",
+    },
+    {
+      subtitle: "Prices",
+      text: "Attending the event is free of charge. A registration via the above link is however mandatory.",
+    },
+  ]}
+  >
+  
   </Content2>
 
     <!-- Content Widget **************** -->

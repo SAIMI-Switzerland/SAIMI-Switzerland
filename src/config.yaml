@@ -1,7 +1,7 @@
 site:
   name: SAIMI
-  site: 'https://saimi-switzerland.github.io/SAIMI-Switzerland/'
-  base: '/SAIMI-Switzerland'
+  site: 'www.saimi.ch'
+  base: '/'
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M

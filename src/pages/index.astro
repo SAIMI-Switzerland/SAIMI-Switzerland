@@ -9,6 +9,7 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Steps3 from '~/components/widgets/Steps3.astro';
+import Steps4 from '~/components/widgets/Steps4.astro';
 import Content from '~/components/widgets/Content.astro';
 import Content2 from '~/components/widgets/Content2.astro';
 import Content3 from '~/components/widgets/Content3.astro';
@@ -74,34 +75,40 @@ const metadata = {
 
     <!-- Steps Widget ****************** -->
 
-  <Steps3
+  <Steps4
     title="Important Dates"
     id="importantdates"
     items={[
       {
-        title: '19.03.2026: <span class="font-medium">Opening abstract submission</span>',
+        title: '20.02.2026: <span class="font-medium">Opening registration</span>',
         description:
           "",
         icon: 'tabler:number-1',
       },
       {
-        title: '30.04.2026: <span class="font-medium">Astract submission deadline</span>',
+        title: '19.03.2026: <span class="font-medium">Opening abstract submission</span>',
         description:
           "",
         icon: 'tabler:number-2',
       },
       {
+        title: '30.04.2026: <span class="font-medium">Astract submission deadline</span>',
+        description:
+          "",
+        icon: 'tabler:number-3',
+      },
+      {
         title: '14.05.2026: <span class="font-medium">Final decisions</span>',
         description:
           '',
-        icon: 'tabler:number-3',
+        icon: 'tabler:number-4',
       },
     ]}
     >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Steps3>
+  </Steps4>
 
     <!-- Content Widget **************** -->
 
@@ -208,7 +215,7 @@ const metadata = {
     sections={[
     {
       subtitle: "Registration",
-      text: "Registration will open soon.",
+      text: 'Please click <a href="https://forms.gle/nAFLuAEqgDmkWHKf6" target="_blank" rel="noopener noreferrer" class="text-primary underline"> here</a> to register.',
     },
     {
       subtitle: "Prices",
@@ -312,7 +319,7 @@ const metadata = {
     id='contact'
     sections={[
     {
-      subtitle: "In case of questions, please feel free to reach out!",
+      subtitle: "Are you interested in sponsoring our event? Any questions? Please feel free to reach out!",
       text: "anna.wundram@unilu.ch",
     },
   ]}

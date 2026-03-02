@@ -41,6 +41,9 @@ export const headerData = {
   ]};
 
 export const footerData = {
+  socialLinks: [
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/symposium-on-artificial-intelligence-in-medical-imaging' },
+  ],
   footNote: `
     Made by the organising comittee based on the AstroWind template. · All rights reserved.
   `,

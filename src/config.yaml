@@ -11,7 +11,7 @@ metadata:
   title:
     default: SAIMI
     template: '%s — SAIMI'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Symposium in AI in Medical Imaging - 18 June 2026 in Bern"
   robots:
     index: true
     follow: true

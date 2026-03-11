@@ -14,6 +14,7 @@ import Content from '~/components/widgets/Content.astro';
 import Content2 from '~/components/widgets/Content2.astro';
 import Content3 from '~/components/widgets/Content3.astro';
 import Content4 from '~/components/widgets/Content4.astro';
+import Content5 from '~/components/widgets/Content5.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -48,13 +49,9 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">SAIMI</span> is a symposium on artifical intelligence in medical imaging organised by multiple Swiss universities.</span>
+       Organised by researchers from multiple Swiss universities.<br /><br /> <span class="font-semibold">18.06.2026 in Bern</span></span>
     </Fragment>
   </Hero>
-
-  <!-- Note Widget ******************* -->
-
-  <Note title="Latest News:" description="We have just announced the event." />
 
   <!-- Content Widget **************** -->
 
@@ -76,7 +73,7 @@ const metadata = {
 
     <!-- Steps Widget ****************** -->
 
-  <Steps4
+  <Steps3
     title="Important Dates"
     id="importantdates"
     items={[
@@ -104,12 +101,18 @@ const metadata = {
           '',
         icon: 'tabler:number-4',
       },
+      {
+        title: '18.06.2026: <span class="font-medium">Event day</span>',
+        description:
+          '',
+        icon: 'tabler:number-5',
+      },
     ]}
     >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Steps4>
+  </Steps3>
 
     <!-- Content Widget **************** -->
 
@@ -152,7 +155,7 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-<Content3
+<Content5
   title="Program"
   id="program"
   sections={[
@@ -181,18 +184,35 @@ const metadata = {
       ],
     },
 
-    /*{
-      id: "keynote",
-      subtitle: "Keynote",
-      text: "We will have multiple keynotes by highly interesting speakers. More information will follow shortly.",
-    },
-    */
+    {
+    type: "people",
+    id: "keynote",
+    subtitle: "Keynotes",
+    people: [
+      {
+        name: "Ender Konukoglu",
+        role: "Ender Konukoglu grew up in Istanbul, Turkey, where he did his undergraduate and master of science degrees in Bogazici University. After finishing his PhD with Nicholas Ayache at INRIA Sophia Antipolis, he moved to Microsoft Research Cambridge for a post-doc position. After a pit stop at the Martinos Center for Biomedical Imaging in Boston, he came to ETH Zurich in 2016 as an assistant professor. Since 2022, he has been an associate professor at ETH Zurich in the department of Information Technology and Electrical Engineering.",
+        image: { src: '~/assets/images/ender.jpg', alt: 'Ender Konukoglu' }
+      },
+       {
+        name: "Speaker 2",
+        role: "To be announced soon",
+        image: { src: '~/assets/images/person_icon.png', alt: '' }
+      },
+      {
+        name: "Speaker 3",
+        role: "To be announced soon",
+        image: { src: '~/assets/images/person_icon.png', alt: '' }
+      },
+    ]
+  },
+    
   ]}
 >
   <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-</Content3>
+</Content5>
 
   <!-- Content Widget **************** -->
 <!-- 

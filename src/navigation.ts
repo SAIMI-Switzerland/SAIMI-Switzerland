@@ -19,7 +19,7 @@ export const headerData = {
       links: [
         { text: 'Date and Location', href: getPermalink('/#program-date-location') },
         { text: 'Schedule', href: getPermalink('/#program-schedule')},
-        //{ text: 'Keynotes', href: getPermalink('/#program-keynote')},
+        { text: 'Keynotes', href: getPermalink('/#program-keynote')},
         //{ text: 'Resources', href: getPermalink('/#resources')},
       ],
     },

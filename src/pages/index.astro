@@ -15,6 +15,7 @@ import Content2 from '~/components/widgets/Content2.astro';
 import Content3 from '~/components/widgets/Content3.astro';
 import Content4 from '~/components/widgets/Content4.astro';
 import Content5 from '~/components/widgets/Content5.astro';
+import Content6 from '~/components/widgets/Content6.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -346,6 +347,27 @@ const metadata = {
   ]}
   >
   </Content2>
+
+    <!-- Content Widget **************** -->
+
+  <Content6
+    title='Sponsors'
+    id='sponsors'
+    sections={[
+    {
+      subtitle: "Supported by",
+      images: [
+      { src: "~/assets/images/logo_unibern.png", alt: "Logo University of Bern"},
+      { src: "~/assets/images/logo_DDM.png", alt: "Logo DDM"},
+    ],
+    },
+  ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content6>
+
 
 
 </Layout>

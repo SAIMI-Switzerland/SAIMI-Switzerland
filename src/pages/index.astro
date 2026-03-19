@@ -35,9 +35,9 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Learn more',
-        href: getPermalink('/#about'),
-        target: '',      
+        text: 'Submit',
+        href: 'https://cmt3.research.microsoft.com/SAIMI2026',
+        target: '_blank',      
       },
       { text: 'Contact us', href: '/#contact' },
     ]}
@@ -144,7 +144,7 @@ const metadata = {
     },
     {
       subtitle: "How to submit?",
-      text: "We will be using CMT for abstract submission, the submission portal will open on the 19.03.2026 and close on 30.04.2026. The link to the submission portal will be posted here once the system is open for submission. The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+      text: 'Please click <a href="https://cmt3.research.microsoft.com/SAIMI2026" target="_blank" rel="noopener noreferrer" class="text-primary underline"> here</a> to submit an abstract. The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.'
     },
     {
       subtitle: "Presentation",
@@ -251,7 +251,7 @@ const metadata = {
     <!-- Content Widget **************** -->
 
 <Content4
-  title="Organising Comittee"
+  title="Organising Committee"
   id="oc"
   sections={[
     {
@@ -288,7 +288,7 @@ const metadata = {
 
  <!-- Content Widget **************** -->
   <Content4
-  title="Steering Comittee"
+  title="Steering Committee"
   id="sc"
   sections={[
     {
@@ -355,10 +355,15 @@ const metadata = {
     id='sponsors'
     sections={[
     {
+      subtitle: "In collaboration with",
+      images: [
+      { src: "~/assets/images/logo_DDM.png", alt: "Logo DDM"},
+    ],
+    },
+    {
       subtitle: "Supported by",
       images: [
       { src: "~/assets/images/logo_unibern.png", alt: "Logo University of Bern"},
-      { src: "~/assets/images/logo_DDM.png", alt: "Logo DDM"},
     ],
     },
   ]}

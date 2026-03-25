@@ -32,6 +32,7 @@ export const headerData = {
       links: [
         { text: 'Organising Comittee', href: getPermalink('/#oc') },
         { text: 'Steering Comittee', href: getPermalink('/#sc')},
+        { text: 'Local Support Team', href: getPermalink('/#lt')},
       ],
     },
     {

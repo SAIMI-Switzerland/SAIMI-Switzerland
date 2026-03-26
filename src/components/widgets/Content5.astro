@@ -121,10 +121,8 @@ const slugify = (str = '') =>
               {person.name}
             </h4>
             {person.role && (
-              <p class="text-gray-600 dark:text-slate-400">
-                {person.role}
-              </p>
-            )}
+            <p class="text-gray-600 dark:text-slate-400 mt-2" set:html={person.role} />
+              )}
           </div>
         </div>
       ))}

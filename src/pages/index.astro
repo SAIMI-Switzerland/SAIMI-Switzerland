@@ -386,28 +386,40 @@ const metadata = {
     <!-- Content Widget **************** -->
 
   <Content6
-    title=''
-    id='sponsors'
-    sections={[
+  title=''
+  id='sponsors'
+  sections={[
     {
       subtitle: "In collaboration with",
+      size: "lg",
       images: [
-      { src: "~/assets/images/logo_DDM.png", alt: "Logo DDM"},
-    ],
+        { src: "~/assets/images/logo_DDM.png", alt: "Logo DDM"},
+      ],
     },
     {
       subtitle: "Supported by",
+      size: "lg",
       images: [
-      { src: "~/assets/images/logo_unibern.png", alt: "Logo University of Bern"},
-      { src: "~/assets/images/MICCAI-Logo.svg", caption: "MICCAI Society Endorsed Event", alt: "MICCAI"},
-    ],
+        { src: "~/assets/images/logoAkrosVfinal.png", alt: "Logo Akros"},
+        { src: "~/assets/images/logo_unibern.png", alt: "Logo University of Bern"},
+      ],
+    },
+    {
+      subtitle: "",
+      size: "md",
+      images: [
+        { src: "~/assets/images/ImFusion_Logo_black_RGB.svg", alt: "Logo ImFusion"},
+      ],
+    },
+    {
+      subtitle: "",
+      size: "sm",
+      images: [
+        { src: "~/assets/images/MICCAI-Logo.svg", caption: "MICCAI Society Endorsed Event", alt: "MICCAI"},
+      ],
     },
   ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content6>
+>
 
 
 

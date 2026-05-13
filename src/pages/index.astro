@@ -22,6 +22,13 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink, getBlogPermalink, getAsset } from '~/utils/permalinks';
+import logoDDM from '~/assets/images/logo_DDM.svg';
+import logoUnibern from '~/assets/images/logo_unibern.svg';
+import logoAkros from '~/assets/images/logoAkrosVfinal.png';
+import logoAWS from '~/assets/images/AWS_logo_RGB_1c_Gray850.svg';
+import logoRetinAI from '~/assets/images/retinai_logo_RGB_black.png';
+import logoImFusion from '~/assets/images/ImFusion_Logo_black_RGB.svg';
+import logoMICCAI from '~/assets/images/MICCAI-Logo.svg';
 
 const metadata = {
   title: 'SAIMI — Symposium on Artificial Intelligence in Medical Imaging',
@@ -385,7 +392,7 @@ const metadata = {
 
     <!-- Content Widget **************** -->
 
-  <Content6
+<Content6
   title=''
   id='sponsors'
   sections={[
@@ -393,31 +400,31 @@ const metadata = {
       subtitle: "In collaboration with",
       size: "lg",
       images: [
-        { src: "~/assets/images/logo_DDM.svg", alt: "Logo DDM"},
-        { src: "~/assets/images/logo_unibern.svg", alt: "Logo University of Bern"},
+        { src: logoDDM, alt: "Logo DDM" },
+        { src: logoUnibern, alt: "Logo University of Bern" },
       ],
     },
     {
       subtitle: "Gold sponsors",
       size: "lg",
       images: [
-       { src: "~/assets/images/logoAkrosVfinal.png", alt: "Logo Akros"},
-       { src: "~/assets/images/AWS_logo_RGB_1c_Gray850.svg", alt: "Logo AWS"},
-       { src: "~/assets/images/retinai_logo_RGB_black.png", alt: "Logo RetinAI"},
+        { src: logoAkros, alt: "Logo Akros" },
+        { src: logoAWS, alt: "Logo AWS" },
+        { src: logoRetinAI, alt: "Logo RetinAI" },
       ],
     },
     {
       subtitle: "Silver Sponsor",
       size: "lg",
       images: [
-      { src: "~/assets/images/ImFusion_Logo_black_RGB.svg", alt: "Logo ImFusion"},
+        { src: logoImFusion, alt: "Logo ImFusion" },
       ],
     },
     {
       subtitle: "Endorsed",
       size: "sm",
       images: [
-        { src: "~/assets/images/MICCAI-Logo.svg", alt: "MICCAI"},
+        { src: logoMICCAI, alt: "MICCAI" },
       ],
     },
   ]}

@@ -43,8 +43,9 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Submit',
-        href: 'https://cmt3.research.microsoft.com/SAIMI2026',
+        text: 'Download Program',
+        href: '/files/program_booklet.pdf',
+        icon: "tabler:download",
         target: '_blank',      
       },
       { text: 'Contact us', href: '/#contact' },
@@ -169,13 +170,25 @@ const metadata = {
   id="program"
   sections={[
     {
+      id: "program-booklet",
+      subtitle: "",
+      text: "A detailed program is available for download, including time slots for all keynotes and lightning talks, assigned poster sessions for all accepted abstracts and further details about the panel discussion.",
+      callToAction: {
+        text: "Download Program",
+        href: "/files/program_booklet.pdf",
+        variant: "primary",
+        icon: "tabler:download",
+        target: "_blank",
+      },
+    },
+    {
       id: "date-location",
       subtitle: "Date and Location",
       text: "18.06.2026<br />Room S003<br />Schanzeneckstrasse 1, 3012 Bern",
     },
     {
       id: "schedule",
-      subtitle: "Schedule (preliminary)",
+      subtitle: "Schedule",
       bullets: [
         "08:30–09:15 Registration",
         "09:15–09:30 Welcome Words and DDM Introduction",
@@ -189,8 +202,8 @@ const metadata = {
         "14:30-14:45 Coffee Break",
         "14:45-15:30 Interactive Session 2 (Poster Session and Industry Booths)",
         "15:30-16:15 Keynote 3",
-        "16:15-16:30 Industry Presentations",
-        "16:30-17:00 Panel Discussion",
+        "16:15-16:35 Industry Talks",
+        "16:35-17:00 Panel Discussion",
         "17:00-17:15 Awards + Closing Words"
       ],
     },

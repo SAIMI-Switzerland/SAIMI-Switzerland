@@ -2,6 +2,7 @@
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import Image from '~/components/common/Image.astro';
+import Button from '~/components/ui/Button.astro';
 
 const {
   title = await Astro.slots.render('title'),
@@ -56,13 +57,20 @@ const slugify = (str = '') =>
           )}
 
           {section.text && (
-            <p
-              class="text-lg text-muted dark:text-slate-400 mb-2"
-              set:html={section.text}
-            />
-          )}
+  <p
+    class="text-lg text-muted dark:text-slate-400 mb-2"
+    set:html={section.text}
+  />
+)}
 
-          {section.bullets && section.bullets.length > 0 && (
+{/* CALL TO ACTION BUTTON */}
+{section.callToAction && (
+  <div class="mt-4">
+    <Button {...section.callToAction} />
+  </div>
+)}
+
+{section.bullets && section.bullets.length > 0 && (
             <div class="text-left inline-block mx-auto">
               <ul class="list-disc list-inside text-lg text-muted dark:text-slate-400 space-y-1">
                 {section.bullets.map((bullet, i) => (

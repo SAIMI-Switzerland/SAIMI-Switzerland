@@ -29,6 +29,10 @@ export const headerData = {
       href: getPermalink('/#attend')
     },
     {
+      text: 'Gallery',
+      href: getPermalink('/#gallery')
+    },
+    {
       text: 'People',
       links: [
         { text: 'Organising Comittee', href: getPermalink('/#oc') },

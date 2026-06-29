@@ -390,13 +390,17 @@ const metadata = {
     </Fragment>
   </Content7>
 
-  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-20">
-    <PhotoGallery
-      photos={galleryPhotos}
-      title="Our gallery"
-      subtitle="Browse and download photos by category"
-    />
-  </section>
+  <Content2
+    title='Our Gallery'
+    id='gallery'
+    sections={[
+      {
+      subtitle: "",
+      text: 'Please click <a href="https://drive.google.com/drive/folders/1Jj3NuSf5i6OtvIVA1L30Ojg82AxaeIAN?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-primary underline"> here</a> to view all photos from the event.'
+    },
+  ]}
+  >
+  </Content2>
 
 
 

@@ -29,6 +29,9 @@ import logoAWS from '~/assets/images/AWS_logo_RGB_1c_Gray850.svg';
 import logoRetinAI from '~/assets/images/retinai_logo_RGB_black.png';
 import logoImFusion from '~/assets/images/ImFusion_Logo_black_RGB.svg';
 import logoMICCAI from '~/assets/images/MICCAI-Logo.svg';
+import PhotoGallery from '~/components/widgets/PhotoGallery.astro';
+import { galleryPhotos } from '~/utils/gallery';
+import type { GalleryPhoto } from '~/utils/gallery';
 
 const metadata = {
   title: 'SAIMI — Symposium on Artificial Intelligence in Medical Imaging',
@@ -386,6 +389,14 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content7>
+
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-20">
+    <PhotoGallery
+      photos={galleryPhotos}
+      title="Our gallery"
+      subtitle="Browse and download photos by category"
+    />
+  </section>
 
 
 
